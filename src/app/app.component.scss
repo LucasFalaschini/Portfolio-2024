@@ -1,0 +1,13 @@
+.custom-background-color {
+    background-color: black !important;
+}
+.nav-link {
+    cursor: pointer;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10000;
+}

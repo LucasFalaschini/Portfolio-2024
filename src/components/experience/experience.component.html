@@ -1,0 +1,89 @@
+<div class="custom-title">
+    <p class="custom-title__title"><span class="custom-text-color">My</span> Experience</p>
+    <p class="custom-title__subtitle">Tap to find out <span class="custom-text-color">more</span></p>
+</div>
+
+<div class="about container">
+
+      <div class="flip-card" [class.flipped]="isFlippedOne" (click)="toggleFlipOne()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../../assets/img/cintac.webp" alt="Front Image">
+          </div>
+          <div class="flip-card-back">
+            <p>
+              I was involved from start to finish, developing key components like product cards, forms, checkout steps, carousels, and category menus. 
+              I also participated in planning meetings.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" [class.flipped]="isFlippedTwo" (click)="toggleFlipTwo()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../../assets/img/pacasmayo.webp" alt="Front Image">
+          </div>
+          <div class="flip-card-back">
+            <p>
+              I contributed to the Cementos Pacasmayo project's development and aided new team members with onboarding, task support, repository management, and adaptation to agile methodologies like Kanban and Scrum.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-card" [class.flipped]="isFlippedThree" (click)="toggleFlipThree()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../../assets/img/molinos.webp" alt="Front Image">
+          </div>
+          <div class="flip-card-back">
+            <p>
+              I provided support during the Tienda Molinos project, addressing code corrections as per client requests.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-card" [class.flipped]="isFlippedFour" (click)="toggleFlipFour()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../../assets/img/piero.webp" alt="Front Image">
+          </div>
+          <div class="flip-card-back">
+            <p>
+              I assisted during the Piero project's support phase, implementing code changes as required. 
+              Additionally, I provided support with administrative tasks and guided the client in adapting to system management aspects.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" [class.flipped]="isFlippedFive" (click)="toggleFlipFive()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../../assets/img/selec.webp" alt="Front Image">
+          </div>
+          <div class="flip-card-back">
+            <p>
+              I commenced by conducting a comprehensive UX/UI analysis of the prevailing webpage. 
+              Subsequently, I crafted a prototype utilizing AdobeXD, which garnered client approval. 
+              Following this stage, I undertook the development of the website.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-card" [class.flipped]="isFlippedSix" (click)="toggleFlipSix()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../../assets/img/adminpro.webp" alt="Front Image">
+          </div>
+          <div class="flip-card-back">
+            <p>
+              In my personal project, I utilized Node.js and MongoDB for the backend and database, respectively, enabling the creation of a dynamic and scalable web application.
+            </p>
+          </div>
+        </div>
+      </div>
+</div>

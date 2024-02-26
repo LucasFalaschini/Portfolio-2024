@@ -1,0 +1,63 @@
+@import '../../styles/mixin.scss';
+
+.custom-footer {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 80px;
+
+    @include celular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    &__title {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-top: 60px;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        @include celular {
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+        &__line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &__icon {
+                & img {
+                    background-color: white;
+                    width: 30px;
+                }
+
+            }
+            &__text {
+                font-size: 30px;
+                color: white;
+                & p {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    @include celular {
+                        font-size: 20px;
+                      }
+                  
+                }
+                & a {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    text-decoration: none;
+                    color: inherit;
+                    @include celular {
+                        font-size: 20px;
+                      }
+                }
+            }
+        }
+    }
+}

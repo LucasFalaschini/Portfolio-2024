@@ -1,0 +1,90 @@
+@import '../../styles/mixin.scss';
+
+.banner{       
+  background-color: black; 
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
+  @include celular {
+    flex-direction: column-reverse;
+  }
+  &__img img {
+    border-radius: 100%;
+  }
+
+  &__saludo {
+    color: white;
+    &__hello {
+      font-size: 20px;
+      @include celular {
+        font-size: 15px;
+      }
+    }
+    &__name {
+      font-size: 70px;
+      @include celular {
+        font-size: 35px;
+      }
+    }
+
+    &__description {
+      max-width: 420px;
+      font-size: 18px;
+      @include celular {
+        font-size: 16px;
+      }
+    }
+
+    &__auto-typing-container {
+        & p {
+          font-family: monospace;
+          font-size: 18px;
+          color: white;
+          white-space: nowrap;
+          overflow: hidden;
+          position: relative;
+          font-weight: 600;
+        }
+      }
+  }
+}
+  
+  @keyframes typing-animation {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+  .circular-frame {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circular-frame img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    z-index: 1000;
+    border-radius: 100%;
+    
+  }
+  
+  .circular-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at bottom left, #FF69B4, #8A2BE2);
+  }
